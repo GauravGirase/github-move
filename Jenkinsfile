@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Shell Script') {
             steps {
-                sh "echo Hello world"
+                sh "cat README.md"
             }
         }
     }
