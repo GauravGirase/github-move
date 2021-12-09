@@ -4,8 +4,9 @@ pipeline {
         
         stage ('Shell Script') {
             steps {
-                git url: "git@github.com:GauravGirase/test_repo_62899.git", branch: "main"
+                git url: "https://github.com/GauravGirase/sample-repo-62899-9-dec.git", branch: "main"
             }
+            
     
         }
     }
