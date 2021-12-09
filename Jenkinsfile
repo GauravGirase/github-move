@@ -4,7 +4,7 @@ pipeline {
         stage ('Groovy Script') {
             steps {
                 script {
-                    sh 'README.md'
+                    cat 'README.md'
                 }
             }
         }
