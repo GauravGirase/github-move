@@ -1,10 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage ('Hello') {
-            
-                echo "Hello am from github"
-            
+        stage ('Groovy Script') {
+            steps {
+                script {
+                    def message = "Hello, World"
+                    println message
+                }
+            }
         }
     }
 }
