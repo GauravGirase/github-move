@@ -4,8 +4,7 @@ pipeline {
         stage ('Groovy Script') {
             steps {
                 script {
-                    def message = "Hello, World"
-                    println message
+                    sh 'README.md'
                 }
             }
         }
