@@ -1,10 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage ('Groovy Script') {
-                sh {
-                    cat 'README.md'
-                }
+        stage ('Shell Script') {
+            steps {
+                sh "echo Hello world"
+            }
         }
     }
 }
